@@ -9,7 +9,14 @@ import proyect1_dos from "../assets/images/proyecto1-capybot-dos.png";
 import proyect1_tres from "../assets/images/proyecto1-capybot-tres.png";
 import proyect2_pres from "../assets/images/proyecto2_press.png";
 import proyect3_pres from "../assets/images/proyecto3_CientificoL.png";
-import proyect3_inicio from "../assets/images/proyecto3_CientificoL_inicio.png"
+import proyect3_inicio from "../assets/images/proyecto3_CientificoL_inicio.png";
+import proyect4_press from "../assets/images/proyecto4_press.png";
+import proyect4_inicio from "../assets/images/proyecto4_inicio.png";
+import proyect4_dos from "../assets/images/proyecto4_dos.png";
+import proyect5_press from "../assets/images/proyecto5_pres.png";
+import proyect5_inicio from "../assets/images/proyecto5_inicio.png";
+import proyect5_dos from "../assets/images/proyecto5_dos.png";
+import proyect6_press from "../assets/images/proyecto6_pres.png";
 
 export default function Portfolio() {
     const [openModal, setOpenModal] = useState(false);
@@ -18,8 +25,29 @@ export default function Portfolio() {
     const [zoomImage, setZoomImage] = useState(null); // fullscreen zoom
 
     const proyectos = [
+
         {
             id: 1,
+            title: "CapyVentas – Sistema de ventas y gestión de caja",
+            description: "Sistema web desarrollado para la gestión de ventas, control de caja y operaciones comerciales. Incluye módulos de registro de ventas, apertura y cierre de caja y administración de transacciones.",
+            images: [proyect5_press, proyect5_inicio, proyect5_dos],
+            tech: [
+                "PHP",
+                "Node.js",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "MySQL",
+                "Sistema POS",
+                "Gestión de caja",
+                "Arquitectura MVC"
+            ],
+            github: "#",
+            demo: "https://capyventas.shaday-pe.com",
+        },
+
+        {
+            id: 2,
             title: "CapyBot: ChatBot Web Inteligente con LLM",
             description:
                 "Chatbot interactivo capaz de responder consultas frecuentes y brindar asistencia en tiempo real, implementado con procesamiento de lenguaje natural. Permite integraciones con web y aplicaciones móviles, mejorando la experiencia del usuario.",
@@ -28,57 +56,67 @@ export default function Portfolio() {
             github: "https://github.com/tu-github/proyecto-web",
             demo: "#",
         },
-        {
-            id: 2,
-            title: "Landing Page en HubSpot CKUDE",
-            description: "Diseño y maquetación de una landing page optimizada para conversión de leads. Implementé formularios, secciones interactivas y elementos visuales siguiendo la identidad de la marca, además de integrar automatizaciones con HubSpot CRM.",
-            images: [proyect2_pres, proyecto1, proyecto3],
-            tech: ["HubSpot", "HTML/CSS", "UX/UI Design", "Marketing Digital", "CRM"],
-            github: "https://github.com/tu-github/proyecto-backend",
-            demo: "https://50137581.hs-sites.com/ckude-landingpage",
-        },
+
         {
             id: 3,
-            title: "JumanjiCov Edition",
-            description: "Proyecto universitario desarrollado en C++ como parte de la asignatura de programación 2. El juego simula una aventura inspirada en Jumanji, implementando mecánicas de exploración, enemigos basado en el contexto de la pandemia",
-            images: [proyect3_pres, proyect3_inicio, proyecto2],
-            tech: ["C++", "POO", "OpenCV", "Logica de juego y coliciones"],
-            github: "https://github.com/tu-github/proyecto-ia",
+            title: "YOUCONFORT – Plataforma de alquiler universitario",
+            description: "Aplicación web desarrollada para ayudar a estudiantes a encontrar alquileres cerca de sus universidades, con filtros avanzados, autenticación segura y despliegue en la nube.",
+            images: [proyect4_press, proyect4_inicio, proyect4_dos],
+            tech: [
+                "Java",
+                "PostgreSQL",
+                "JWT Authentication",
+                "Password Hashing",
+                "AWS EC2",
+                "Firewall & Security Groups",
+                "Angular",
+                "REST API"
+            ],
+            github: "https://github.com/correak/YCv2.git",
             demo: "#",
         },
 
         {
             id: 4,
-            title: "YouConfort",
-            description: "Proyecto universitario desarrollado en Java, JS,",
-            images: [proyect3_pres, proyecto1, proyecto2],
-            tech: ["C++", "POO", "OpenCV", "Logica de juego y coliciones"],
-            github: "https://github.com/correak/YCv2.git",
-            demo: "#",
+            title: "Landing Page en HubSpot CKUDE",
+            description: "Diseño y maquetación de una landing page optimizada para conversión de leads. Implementé formularios, secciones interactivas y elementos visuales siguiendo la identidad de la marca, además de integrar automatizaciones con HubSpot CRM.",
+            images: [proyect2_pres],
+            tech: ["HubSpot", "HTML/CSS", "UX/UI Design", "Marketing Digital", "CRM"],
+            github: "https://github.com/tu-github/proyecto-backend",
+            demo: "https://50137581.hs-sites.com/ckude-landingpage",
         },
 
         {
             id: 5,
             title: "JumanjiCov Edition",
             description: "Proyecto universitario desarrollado en C++ como parte de la asignatura de programación 2. El juego simula una aventura inspirada en Jumanji, implementando mecánicas de exploración, enemigos basado en el contexto de la pandemia",
-            images: [proyect3_pres, proyecto1, proyecto2],
+            images: [proyect3_pres, proyect3_inicio],
             tech: ["C++", "POO", "OpenCV", "Logica de juego y coliciones"],
-            github: "https://github.com/tu-github/proyecto-ia",
+            github: "https://github.com/correak/JumProgCovEdits.git",
             demo: "#",
         },
 
-    
+
         {
             id: 6,
-            title: "JumanjiCov Edition",
-            description: "Proyecto universitario desarrollado en C++ como parte de la asignatura de programación 2. El juego simula una aventura inspirada en Jumanji, implementando mecánicas de exploración, enemigos basado en el contexto de la pandemia",
-            images: [proyect3_pres, proyecto1, proyecto2],
-            tech: ["C++", "POO", "OpenCV", "Logica de juego y coliciones"],
-            github: "https://github.com/tu-github/proyecto-ia",
-            demo: "#",
+            title: "Portafolio Web Profesional",
+            description: "Sitio web desarrollado con React y Vite para presentar mis proyectos, habilidades y experiencia profesional. Incluye diseño responsive, componentes reutilizables y despliegue en la nube.",
+            images: [proyect6_press],
+            tech: [
+                "React",
+                "Vite",
+                "Tailwind CSS",
+                "HTML",
+                "JavaScript",
+                "Responsive Design",
+                "GitHub",
+                "Vercel"
+            ],
+            github: "https://github.com/correak/mi-portafolio",
+            demo: "https://tu-portafolio.vercel.app",
         },
 
-        
+
     ];
 
     const openProjectModal = (project, index = 0) => {
@@ -106,8 +144,8 @@ export default function Portfolio() {
 
     return (
         <section className="w-full min-h-screen bg-dark text-white py-40 px-6 md:px-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-                Mi Portafolio
+            <h2 className="text-4xl md:text-3xl font-bold text-center mb-12">
+                Más destacados
             </h2>
 
             <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">

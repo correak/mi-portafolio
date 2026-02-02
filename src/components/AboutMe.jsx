@@ -1,4 +1,4 @@
-import bg from "../assets/images/unnamed.png";
+import bg from "../assets/images/imyou.png";
 // components/space.js
 export default function AboutMe() {
   return (
@@ -26,7 +26,7 @@ export default function AboutMe() {
              artificial.
           </p>
           <p className="font-medium italic">
-            Me gusta aprender creando proyectos reales, mejorar mis habilidades.
+            Me gusta aprender creando proyectos reales y sobre todo mejorar mis habilidades.
           </p>
           <p className="text-sm font-bold uppercase tracking-widest pt-4">
             

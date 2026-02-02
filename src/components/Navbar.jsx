@@ -15,23 +15,23 @@ export default function Navbar() {
 
       {/* Menú de navegación desktop */}
       <ul className="hidden md:flex gap-8 text-center text-sm font-semibold text-gray-300">
-        <li className="hover:text-secondary transition">
-          <a href="#hero">Inicio</a>
+        <li >
+          <Link to="/#hero" className="hover:text-secondary transition" >Inicio</Link>
+        </li>
+        <li >
+          <Link to="/#about-me" className="hover:text-secondary transition">Sobre mí</Link>
+        </li>
+        <li >
+          <Link to="/#skills" className="hover:text-secondary transition">Skills</Link>
+        </li>
+        <li >
+           <Link to="/#education" className="hover:text-secondary transition">Educación</Link>
         </li>
         <li className="hover:text-secondary transition">
-          <a href="#about-me">Sobre mí</a>
+          <Link to="/portfolio">Portafolio</Link>
         </li>
-        <li className="hover:text-secondary transition">
-          <a href="#skills">Skills</a>
-        </li>
-        <li className="hover:text-secondary transition">
-          <a href="#education">Educación</a>
-        </li>
-        <li className="hover:text-secondary transition">
-          <Link to="/portfolio">Portafolio</Link> {/* Aquí es la ruta nueva */}
-        </li>
-        <li className="hover:text-secondary transition">
-          <a href="#contact">Contacto</a>
+        <li >
+          <Link to="/#contact" className="hover:text-secondary transition">Contacto</Link>
         </li>
       </ul>
 
@@ -64,22 +64,23 @@ export default function Navbar() {
           </button>
           <ul className="flex flex-col gap-8 text-white text-xl uppercase font-semibold">
             <li className="hover:text-secondary cursor-pointer transition" onClick={() => setOpen(false)}>
-              <a href="#hero">Inicio</a>
+              <Link to="/#hero" onClick={() => setOpen(false)}>Inicio</Link>
             </li>
             <li className="hover:text-secondary cursor-pointer transition" onClick={() => setOpen(false)}>
-              <a href="#about-me">Sobre mí</a>
+              <Link to="/#about-me" onClick={() => setOpen(false)}>Sobre mí</Link>
+
             </li>
             <li className="hover:text-secondary cursor-pointer transition" onClick={() => setOpen(false)}>
-              <a href="#skills">Skills</a>
+               <Link to="/#skills" onClick={() => setOpen(false)}>Skills</Link>
             </li>
             <li className="hover:text-secondary cursor-pointer transition" onClick={() => setOpen(false)}>
-              <a href="#education">Educación</a>
+              <Link to="/#education" onClick={() => setOpen(false)}>Educación</Link>
             </li>
             <li className="hover:text-secondary cursor-pointer transition" onClick={() => setOpen(false)}>
               <Link to="/portfolio">Portafolio</Link> {/* Móvil también */}
             </li>
             <li className="hover:text-secondary cursor-pointer transition" onClick={() => setOpen(false)}>
-              <a href="#contact">Contacto</a>
+              <Link to="/#contact" onClick={() => setOpen(false)}>Contacto</Link>
             </li>
           </ul>
         </div>
